@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Rent Calculation Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: left;
+        }
+        h1 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .bill-details, .rent-details {
+            margin-bottom: 1.5rem;
+        }
+        .bill-details p, .rent-details p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+        .highlight {
+            background: rgba(255, 111, 97, 0.2); /* Light red background */
+            border: 2px solid #ff6f61; /* Red border */
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        a {
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            display: block;
+            text-align: center;
+            margin-top: 1.5rem;
+            transition: background 0.3s ease;
+        }
+        a:hover {
+            background: #ff3b2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hostel Rent Calculation Result</h1>
+        <div class="bill-details">
+            <h2>Electricity Bill Details</h2>
+            <p>Units Consumed: {{ units }}</p>
+            <p>Rate per Unit: {{ rate }} PKR</p>
+            <p>Fixed Charge: {{ fixed_charge }} PKR</p>
+            <p>Tax Rate: {{ tax_rate }}%</p>
+            <p>Cost (Units * Rate): {{ cost }} PKR</p>
+            <p>Tax Amount: {{ tax_amount }} PKR</p>
+            <p class="total">Total Electricity Bill: {{ total_bill }} PKR</p>
+        </div>
+        <div class="rent-details">
+            <h2>Rent Details</h2>
+            <p>Hostel Rent: {{ hostel }} PKR</p>
+            <p>Food Bill: {{ food }} PKR</p>
+            <p>Total Persons: {{ person }}</p>
+        </div>
+        <div class="highlight">
+            <p class="total">Each Person Will Pay: {{ output_show }} PKR</p>
+        </div>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
