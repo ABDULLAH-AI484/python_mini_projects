@@ -5,3 +5,6 @@ The Hostel Rent Calculation project is a web application built using Flask and H
 
 ## Tic-tac-toe game
 This project is a classic Tic-Tac-Toe game built using Python Flask for the backend and HTML/CSS/JavaScript for the frontend. It features a responsive and stylish design with interactive gameplay, including dynamic winning line animations when a player wins. Players can enjoy a modern, colorful interface with hover effects and easily reset the game to play again. The game is simple to run locally using Flask and provides a fun and engaging experience in the browser.
+
+##Task managment app
+The Task Management App is a Python-based command-line interface (CLI) application designed to help users manage their tasks efficiently. It allows users to add, update, delete, and view tasks in an interactive manner. The app starts by prompting users to add initial tasks and then presents a menu-driven interface for further actions. Users can add new tasks, update existing ones, delete tasks, or view the full list of tasks.
